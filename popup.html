@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save to Anki</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, input {
+            width: 100%;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Save to Anki 设置</h1>
+    <label for="deck">选择牌组:</label>
+    <select id="deck">
+        <option value="默认">默认</option>
+        <!-- 这里可以动态添加更多牌组选项 -->
+    </select>
+
+    <label for="model">选择笔记类型:</label>
+    <select id="model">
+        <option value="基础">基础</option>
+        <!-- 这里可以动态添加更多笔记类型选项 -->
+    </select>
+
+    <label for="api-key">Gemini API Key:</label>
+    <input type="password" id="api-key">
+
+    <button id="save-settings">保存设置</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
